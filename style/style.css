@@ -1,70 +1,155 @@
 header {
-    margin: 0 auto; padding: 0 30px;
+    margin: 0 auto; 
     position: fixed; top: 0; left: 0;
-    width: 100%; height: 100%; white-space: nowrap;
+    width: 100%; height: 176px; white-space: nowrap; z-index: 10;
 }
+/* header 협업브랜드, 광고, user_info */
 header .top{
     display: flex; justify-content: space-between;
-    background: #999;
+    background: #999; height: 50px; padding: 0 30px;
 }
-header .other_brands {}
+header .other_brands {padding-top: 10px;}
 header .other_brands a{width: 24px; height: 24px;}
 header .other_brands a img{}
-header .h_center {text-align: center;}
+header .h_center {padding-top: 8px; text-align: center;}
 header .h_center p {}
 header .h_center p a {}
-header .h_right {}
+header .h_right {padding-top: 15px;}
 header .h_right a {}
 header .bottom {
     display: flex; justify-content: space-between;
+    padding: 25px 30px; background: #fff;
 }
-header .bottom a {}
+header .bottom a { align-items: center;}
 header .bottom a img {}
-header .bottom nav{background: yellowgreen;}
-
+header .bottom nav{}
+/* main menu */
 header .bottom nav .main_menu{
-    background: pink; display: flex; flex-flow: row nowrap;
-    padding: 15px 0; 
+    display: flex; flex-flow: row nowrap;
 }
 header .bottom nav .main_menu > li{
-    position: relative; padding-right:30px;
+    padding-right:30px;
 }
 header .bottom nav .main_menu > li > a{
-    background: yellow; 
-    line-height:30px; font-weight: 700;
+    line-height:30px; font-weight: 700; font-size: 1.333em;
+}
+header .bottom nav .main_menu > li > a:hover{
+    border-bottom: 2px solid black;
 }
 header .bottom nav .main_menu > li > .sub_menu{
-    display: none; height: 500px; background: #fff; 
-    position: absolute;
+    display: flex; height: 600px; background: white;
+    position: absolute; margin-top: 30px; width: 100%;
+    left: 0; padding-left: 182px;
 }
-header .bottom nav .main_menu li .sub1 {display: flex;}
+/* header .bottom nav .main_menu li .sub1 {display: flex;} */
 header .bottom nav .main_menu li > .sub_menu > li { 
-    border-right:1px solid black ; text-align: center;
+    border-right:1px solid #ddd ; text-align: center;
+    padding: 0 15px;
+    
 }
-header .bottom nav .main_menu li > .sub_menu > li { 
+header .bottom nav .main_menu li > .sub_menu > li {} 
+/* 서브메뉴 양쪽 선 */
+header .bottom nav .main_menu li > .sub_menu > li:first-child { border-right:none ;}
 header .bottom nav .main_menu li > .sub_menu > li:last-child { border-right:none ;}
 header .bottom nav .main_menu > li > .sub_menu > li > a {
-    padding: 15px 0 15px 5px; display: inline-block;
+    padding-bottom: 20px; display: inline-block; font-size: 1.2em;
+    font-weight: 600;
 }
-header .bottom nav .main_menu li .sub_menu:first-child li {
-    width: 200px; background: #999; height: 50px;
+header .bottom nav .main_menu > li > .sub_menu > li > .sub_contents{
 }
-header .bottom nav .main_menu li .sub_menu li .sub_contents{
+header .bottom nav .main_menu > li > .sub_menu > li > .sub_contents > li {}
+header .bottom nav .main_menu > li > .sub_menu > li > .sub_contents> li > a {
+    color: gray;
+    padding: 10px 0; display: block; 
 }
-header .bottom nav .main_menu li .sub_menu li .sub_contents li {}
-header .bottom nav .main_menu li .sub_menu li .sub_contents li a {
-    background: purple;  color: gray;
-    padding: 0 30px; display: block;line-height:30px;
+header .bottom nav .main_menu li .sub_menu li .sub_contents li a:hover {
+    color: black;
 }
+/* user icon & search */
+header .bottom .b_right {
+    display: flex;
+}
+header .bottom .b_right a{padding-right: 20px;}
+header .bottom .b_right {}
+header .bottom .b_right .search{
+    background: #ddd; border-radius:;
+}
+header .bottom .b_right .search fieldset{display: flex; justify-content: space-between;}
+header .bottom .b_right .search fieldset #searchtxt{
+    background: none; width: 200px; height: 40px; 
+    margin-left: 10px;
+}
+header .bottom .b_right .search fieldset #searchbtn{
+    background: none;
+    width: 24px; height: 24px; padding-top: 10px;
+}
+header .bottom .b_right .search fieldset #searchbtn img{
+    width: 100%;
+}
+header .bottom .b_right .search_btn{}
+header .bottom .b_right {}
+/* main */
+main {margin-top: 134px; background-color: yellowgreen; }
 /* slide */
-main {}
-main #marketing_slide{}
+main #marketing_slide{position: relative;
+}
 main #marketing_slide .swiper-wrapper {}
-main #marketing_slide .swiper-wrapper .slide1{}
-main #marketing_slide .swiper-wrapper .slide2{}
-main #marketing_slide .swiper-wrapper .slide3{}
-main #marketing_slide .swiper-wrapper .slide4{}
+main #marketing_slide .swiper-wrapper .swiper-slide {
+    width: 100%; position: relative; height:800px;
+}
+main #marketing_slide .swiper-wrapper .swiper-slide .slide_txt{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%); text-align: center;
+}
+main #marketing_slide .swiper-wrapper .swiper-slide .slide_txt h1{
+    line-height: 30px; font-weight: 600; font-size: 3.157em;
+}
+main #marketing_slide .swiper-wrapper .swiper-slide .slide_txt h1 span{}
+main #marketing_slide .swiper-wrapper .swiper-slide .slide_txt h1 a{
+    background: black; border-radius: 20px; color: #fff; padding: 5px 20px;
+}
+main #marketing_slide .swiper-wrapper .slide1{
+    background: url(../image/marketing_bn_slide1.jpg) no-repeat;
+}
+main #marketing_slide .swiper-wrapper .slide2{
+    background: url(../image/marketing_bn_slide2.jpg) no-repeat;
+}
+main #marketing_slide .swiper-wrapper .slide3{
+    background: url(../image/marketing_bn_slide3.jpg) no-repeat;
+}
+main #marketing_slide .swiper-wrapper .slide4{
+    background: url(../image/marketing_bn_slide4.jpg) no-repeat;
+}
 main #marketing_slide .swiper-wrapper .slide5{}
 main #marketing_slide .swiper-wrapper .slide6{}
 main #marketing_slide .swiper-wrapper .slide7{}
 main #marketing_slide .swiper-wrapper .slide8{}
+/* ******** Featured_shoes section ********* */
+main section {}
+main section h1 {}
+main #featured_shoes_item {}
+main #featured_shoes_item {}
+main #featured_shoes_item .swiper-wrapper{}
+main #featured_shoes_item .swiper-wrapper .swiper-slide { 
+}
+main #featured_shoes_item .swiper-wrapper .swiper-slide a{
+    display: flex; flex-flow: column nowrap; 
+}
+main #featured_shoes_item .swiper-wrapper .swiper-slide a > *{
+    line-height: 25px;
+}
+main #featured_shoes_item .swiper-wrapper .swiper-slide a img{
+    width: 330px; height: 330px;}
+main #featured_shoes_item .swiper-wrapper .swiper-slide a em{
+    color: #c98200; font-weight: 600;
+}
+main #featured_shoes_item .swiper-wrapper .swiper-slide a span{}
+main #featured_shoes_item .swiper-wrapper .swiper-slide a strong{
+    color: #fff; width: 45px;text-align: center;
+}
+main #featured_shoes_item .swiper-wrapper .swiper-slide a .male{background: black; }
+main #featured_shoes_item .swiper-wrapper .swiper-slide a .female{background: rgb(252, 0, 126);}
+main #featured_shoes_item .swiper-wrapper .swiper-slide a .unisex {background: rgb(216, 68, 0);}
+main #featured_shoes_item .swiper-wrapper .slide1{}

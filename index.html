@@ -6,6 +6,10 @@
     <meta name="description" content="나이키 공식 홈페이지입니다.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike. Just Do it 나이키 코리아</title>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- style sheet -->
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
@@ -31,9 +35,9 @@
             <h1><a href="#"><img src="./image/nike_logo.png" alt="nike"></a></h1>
             <nav>
                 <ul class="main_menu">
-                    <li><a href="#">New Releases</a>
+                    <li class="gnb"><a href="#">New Releases</a>
                         <ul class="sub_menu sub1">
-                            <li class="sub_menu_item"><a href="#"><img src="#" alt=""></a></li>
+                            <li class="sub_menu_item"><a href="#"><img src="./image/sub_menu_item1.jpg" alt=""></a></li>
                             <li><a href="#">New & Featured</a>
                                 <ul class="sub_contents">
                                     <li><a href="#">신제품 전체보기</a></li>
@@ -88,9 +92,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Men</a>
+                    <li class="gnb"><a href="#">Men</a>
                         <ul class="sub_menu">
-                            <li class="sub_menu_item"><a href="#"><img src="#" alt=""></a>
+                            <li class="sub_menu_item"><a href="#"><img src="./image/sub_menu_item_men.jpg" alt=""></a>
                             </li>
                             <li><a href="#">New & Featured</a>
                                 <ul class="sub_contents">
@@ -178,9 +182,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Woman</a>
+                    <li class="gnb"><a href="#">Woman</a>
                         <ul class="sub_menu">
-                            <li class="sub_menu_item"><a href="#"><img src="#" alt=""></a>
+                            <li class="sub_menu_item"><a href="#"><img src="./image/sub_menu_item_women.jpg" alt=""></a>
                             </li>
                             <li><a href="#">New & Featured</a>
                                 <ul class="sub_contents">
@@ -261,9 +265,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Kids</a>
+                    <li class="gnb"><a href="#">Kids</a>
                         <ul class="sub_menu">
-                            <li class="sub_menu_item"><a href="#"><img src="#" alt=""></a>
+                            <li class="sub_menu_item"><a href="#"><img src="./image/sub_menu_kids.jpg" alt=""></a>
                             </li>
                             <li><a href="#">New & Featured</a>
                                 <ul class="sub_contents">
@@ -340,9 +344,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Sale</a>
+                    <li class="gnb"><a href="#">Sale</a>
                         <ul class="sub_menu">
-                            <li class="sub_menu_item"><a href="#"><img src="#" alt=""></a>
+                            <li class="sub_menu_item"><a href="#"><img src="./image/sub_menu_sale.jpg" alt=""></a>
                             </li>
                             <li><a href="#">Sale</a>
                                 <ul class="sub_contents">
@@ -354,8 +358,6 @@
                                     <li><a href="#">에어 맥스</a></li>
                                 </ul>
                             </li>
-                        </ul>
-                        <ul class="sub_menu">
                             <li><a href="#">Mens Sale</a>
                                 <ul class="sub_contents">
                                     <li><a href="#">신발</a></li>
@@ -364,8 +366,6 @@
                                     <li><a href="#">전체 보기</a></li>
                                 </ul>
                             </li>
-                        </ul>
-                        <ul class="sub_menu">
                             <li><a href="#">Womens Sale</a>
                                 <ul class="sub_contents">
                                     <li><a href="#">신발</a></li>
@@ -374,8 +374,6 @@
                                     <li><a href="#">전체 보기</a></li>
                                 </ul>
                             </li>
-                        </ul>
-                        <ul class="sub_menu">
                             <li><a href="#">Kids Sale</a>
                                 <ul class="sub_contents">
                                     <li><a href="#">신발</a></li>
@@ -388,55 +386,224 @@
                     </li>
                     <li><a href="#">SNKNRS</a></li>
                     <li><a href="#">나이키 앱</a></li>
-                </ul>
-                <div class="nav_bg"></div>
+                </ul>    
             </nav>
             <div class="b_right">
                 <a href="#" title="찜"><img src="./image/icon_like1.png" alt="찜목록"></a>
                 <a href="#" title="장바구니"><img src="./image/icon_cart1.png" alt="장바구니"></a>
-                <input type="search" class="search" placeholder="검색">
-                <button type="button"><img src="./image/icon_Search.png" alt=""></button>
+                <form action="#" method="post" class="search">
+                    <fieldset>
+                        <legend class="skip">검색창</legend>
+                        <input type="search" id="searchtxt" placeholder="검색">
+                        <button type="submit" id="searchbtn"><img src="./image/icon_Search.png" alt="검색"></button>
+                    </fieldset>
+                </form>
             </div>
         </div>
     </header>
     <main>
         <div class="swiper" id="marketing_slide">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide1"><a href="#">
-                    <!-- <iframe width="1271" height="715" src="https://www.youtube.com/embed/IsedZPsI6Qs" title="인피니티 런 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                </a></div>
-                <div class="swiper-slide slide2"><a href="#"></a></div>
-                <div class="swiper-slide slide3"><a href="#"></a></div>
-                <div class="swiper-slide slide4"><a href="#"></a></div>
-                <div class="swiper-slide slide5"><a href="#"></a></div>
-                <div class="swiper-slide slide6"><a href="#"></a></div>
-                <div class="swiper-slide slide7"><a href="#"></a></div>
-                <div class="swiper-slide slide8"><a href="#"></a></div>
+                <div class="swiper-slide slide1">
+                    <div class="slide_txt">
+                        <h1>
+                            <span>나이키 인피니티 런5</span><br>
+                            달리는 너에게 무한한 서포트<br>
+                            <span>새로운 리액트X 폼으로 부드럽고 안정적인 지지력을 선사하는 나이키 인피니티런4.<br>지금 바로 만나보세요.</span><br>
+                            <a href="#">구매하기</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="slide_txt">
+                        <h1>
+                            <span>나이키와 함께하는 가을 스타일링</span><br>
+                            요가 스타일링<br>
+                            <span>선선해진 가을과 어울리는, 자유로운 움직임을 위한 요가 스탕일링.<br>매주 공개되는 스타일링 미션에 참여하여 특별한 기프트도 함께 만나 보세요.</span><br>
+                            <a href="#">자세히 보기</a>
+                            <a href="#">구매하기</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="swiper-slide slide3">
+                    <div class="slide_txt">
+                        <h1>
+                            나이키 요가 컬렉션<br>
+                            <span>매트 위, 부드러운 편안함을 경험해 보세요.</span><br>
+                            <a href="#">구매하기</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="swiper-slide slide4">
+                    <div class="slide_txt">
+                        <h1>
+                            <span>Find Your Bra</span><br>
+                            스포츠 브라 유형 테스트<br>
+                            <span>바라던 퍼포먼스, 가장 나타운 핏과 디자인까지.<br>간단한 테스트를 통해 나에게 꼭 맞는 스포츠 브라를 찾아보세요.</span><br>
+                            <a href="#">자세히 보기</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="swiper-slide slide5">
+                    <div class="slide_txt">
+                        <h1>
+                            <span>나이키 코르테즈</span><br>
+                            클래식의 재해석<br>
+                            <span>자신만의 길을 가는 모든 이들을 위한 나이키 코르테즈와 함께<br>나만의 개성을 표현해 보세요.</span><br>
+                            <a href="#">구매하기</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="swiper-slide slide6">
+                    <div class="slide_txt">
+                        <h1>
+                            나이키 줌 보메로 5<br>
+                            <span>편안한 착용감에 스타일을 더한 나이키 줌 보메로 5를 만나 보세요.</span><br>
+                            <a href="#">구매하기</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="swiper-slide slide7">
+                    <div class="slide_txt">
+                        <h1>
+                            <span>에어맥스 1</span><br>
+                            모든 형식에서 벗어나 자유롭게<br>
+                            <span>패션 아이템을 넘어 라이프 스타일로.<br>새로운 장르를 만들어낸 에어맥스 1을 만나 보세요.</span><br>
+                            <a href="#">구매하기</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="swiper-slide slide8">
+                    <div class="slide_txt">
+                        <h1>
+                            <span>나이키 레디팩</span><br>
+                            축구를 위한 모든 것<br>
+                            <span>새로운 의미로 기억될 축구 시즌을 맞이해 보세요.<br>
+                                최상의 스피드, 터치감, 민첩성, 그리고 정교함으로 완벽하게 경기를 준비해 보세요.</span><br>
+                            <a href="#">구매하기</a>
+                        </h1>
+                    </div>
+                </div>
+
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
         </div>
+        <section>
+            <h1>##Featured Shoes</h1>
+            <div class="swiper" id="featured_shoes_item" >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1"><!-- ok -->
+                        <a href="#">
+                            <img src="./image/featured_shoe_1.jpg" alt="">
+                            <em>For Memebers</em>
+                            <span>나이키 인피니티 런4</span>
+                            <span>179,000 원</span>
+                            <strong class="female">여성</strong>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide2"><!-- ok -->
+                        <a href="#">
+                            <img src="./image/featured_shoe_2.jpg" alt="">
+                            <em>For Memebers</em>
+                            <span>에어 조던 XXXVIII PF</span>
+                            <span>239,000 원</span>
+                            <strong class="unisex">공용</strong>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide3"><!-- ok -->
+                        <a href="#">
+                            <img src="./image/featured_shoe_3.jpg" alt="">
+                            <em>For Memebers</em>
+                            <span>나이키 에어 포스 1 ‘07</span>
+                            <span>139,000 원</span>
+                            <strong class="female">여성</strong>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide4"><!-- ok -->
+                        <a href="#">
+                            <img src="./image/featured_shoe_4.jpg" alt="">
+                            <em>For Memebers</em>
+                            <span>에어 조던 1 로우 SE 크래프트</span>
+                            <span>139,000 원</span>
+                            <strong class="male">남성</strong>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <a href="#">
+                            <img src="./image/featured_shoe_2.jpg" alt="">
+                            <em>For Memebers</em>
+                            <span>나이키 에어 포스 1 ‘07</span>
+                            <span>139,000 원</span>
+                            <strong class="male">남성</strong>
+                            <strong class="female"></strong>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide6">
+                        <a href="#">
+                            <img src="./image/featured_shoe_3.jpg" alt="">
+                            <em>For Memebers</em>
+                            <span>나이키 에어 포스 1 ‘07</span>
+                            <span>139,000 원</span>
+                            <strong class="male">남성</strong>
+                            <strong class="female"></strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
     </main>
     <script>
-    //     const mainMenu = document.querySelectorAll('header .main_menu > li')
-    //     const subMenu = document.querySelectorAll('header .sub_menu')
-    //     const subContents = document.querySelectorAll('header .sub_contents')
-    //     const navBg = document.querySelectorAll('header .nav_bg')
-    //     console.log(mainMenu, subMenu, subContents)
-    //     for(let i of subMenu){
-    //         i.style.display = 'none'
-    //     }for(let i of mainMenu){
-    //         i.addEventListener('mouseover',function(e){
-    //             e.preventDefault()
-    //             console.log(i.lastElementChild)
-    //             i.lastElementChild.style.display = 'flex'
-    //         })
-    //         i.addEventListener('mouseout',function(){
-    //             i.lastElementChild.style.display = 'none'
-    //         })}
-    //         // swiper slide
-    //     const swiper = new Swiper('.swiper-container')
-    // </script>
-<!-- <script src="./script/header.js"></script> -->
+        // 마우스 올리는 메뉴 mainMenu
+        const mainMenu = document.querySelectorAll('header .main_menu > .gnb')
+        // mainMenu 올리면 나오는 메뉴 subMenu 
+        const subMenu = document.querySelectorAll('header .sub_menu')
+        // const subContents = document.querySelectorAll('header .sub_contents')
+        console.log(mainMenu, subMenu)
+        //모든 서브 숨기기
+        for(let i of subMenu){i.style.display = 'none'}
+        for(let i of mainMenu){
+            i.addEventListener('mouseover',function(){
+                // console.log(i.lastElementChild)
+                i.lastElementChild.style.display = 'flex'
+            })
+            i.addEventListener('mouseout',function(){
+                i.lastElementChild.style.display = 'none'
+            })}
+            // swiper slide
+            //배너 슬라이드     
+        const mSlide = new Swiper("#marketing_slide",{
+            slidesPerView:1, /* 한 번에 보이는 슬라이드 갯수 */
+            loop:true, // 무한 반복 설정
+            autoplay:{delay:3000}, //자동재생 :{걸리는 시간 : 2초}
+            speed:1000, //슬라이드 전환 시 부드러운 효과. 넘어가는 속도 0.8초 
+            scrollbar:{el:'#marketing_slide .swiper-scrollbar'}, //스크롤바 표시
+/*             breakpoints:{
+                600:{slidesPerView:2, canteredSlides:false},
+                1000:{slidesPerView:3, centeredSlides:true},
+                
+            } */
+        });
+            // ******* featured Shoes item slide **********
+            const featuredShoes = new Swiper('#featured_shoes_item',{
+                slidesPerView:'auto',
+                spaceBetween:20,
+                slidesPerView:4,
+                autoplay:{delay:3000},
+                /*
+                swiper-slide 반응형 웹 옵션
+                breakpoints:{
+                    해상도:{옵션:값}
+                    500(모바일):{slidesPerView:2},
+                    900(태블릿):{slidesPerView:3}
+                    1160(데스크탑):{slidesPerView:4}
+                }
+                */
+            })
+    </script>
 </body>
 </html>

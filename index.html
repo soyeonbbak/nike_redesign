@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- style sheet -->
     <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -384,8 +385,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">SNKNRS</a></li>
-                    <li><a href="#">나이키 앱</a></li>
+                    <li class="n_gnb"><a href="#">SNKNRS</a></li>
+                    <li class="n_gnb"><a href="#">나이키 앱</a></li>
                 </ul>    
             </nav>
             <div class="b_right">
@@ -466,16 +467,6 @@
                 <div class="swiper-slide slide7">
                     <div class="slide_txt">
                         <h1>
-                            <span>에어맥스 1</span><br>
-                            모든 형식에서 벗어나 자유롭게<br>
-                            <span>패션 아이템을 넘어 라이프 스타일로.<br>새로운 장르를 만들어낸 에어맥스 1을 만나 보세요.</span><br>
-                            <a href="#">구매하기</a>
-                        </h1>
-                    </div>
-                </div>
-                <div class="swiper-slide slide8">
-                    <div class="slide_txt">
-                        <h1>
                             <span>나이키 레디팩</span><br>
                             축구를 위한 모든 것<br>
                             <span>새로운 의미로 기억될 축구 시즌을 맞이해 보세요.<br>
@@ -484,14 +475,13 @@
                         </h1>
                     </div>
                 </div>
-
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-scrollbar"></div>
         </div>
-        <section>
-            <h1>##Featured Shoes</h1>
+        <section class="featured_shoe_box">
+            <h1>#Featured Shoes</h1>
             <div class="swiper" id="featured_shoes_item" >
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1"><!-- ok -->
@@ -553,13 +543,122 @@
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-                <div class="swiper-scrollbar"></div>
+            </div>
+            <!-- featuerd shoes end -->
+            <!-- Always Iconic slide -->
+<!--             <div class="swiper" id="always">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> -->
+        </section>
+        <section id="app">
+            <h1>나이키 어플과 함께 하기</h1>
+            <div class="app_items">
+                <div class="app_box app_box1">
+                    <a href="#"><img src="./image/app_nike.jpg" alt=""></a>
+                    <div class="app_box_txt">
+                        <h2>나이키 앱</h2>
+                        <p>원하는 것을 누구보다 빠르게,<br>
+                        새로운 영감으로 매일을 새롭게, 상상만 했던 경험을 현실로.<br>
+                        여러분의 매일을 나이키 앱에서 바꿔보세요.</p>
+                        <p><a href="#">자세히 보기</a></p>
+                    </div>
+                </div>
+                <div class="app_box app_box2">
+                    <a href="#"><img src="./image/app_ntc.jpg" alt=""></a>
+                    <div class="app_box_txt">
+                        <h2>나이키 트레이닝 클럽(NTC)</h2>
+                        <p>NTC 앱으로 개인 맞춤형 트레이닝 가이드를 만나 보세요.<br>
+                        운동, 마음가짐, 영양, 수면 등 몸과<br>
+                        마음을 위한 전문가 팁도 함께 제공됩니다.</p>
+                        <p><a href="#">자세히 보기</a></p>
+                    </div>
+                </div>
+                <div class="app_box app_box3">
+                    <a href="#"><img src="./image/app_nrc.jpg" alt=""></a>
+                    <div class="app_box_txt">
+                        <h2>나이키 런 클럽(NRC)</h2>
+                        <p>NRC 앱과 함께 언제 어디서든 러닝을 시작해 보세요.<br>
+                        전문 러닝 코치들의 오디오 가이드 런으로<br>
+                        올바른 러닝 루틴을 만들 수 있습니다.</p>
+                        <p><a href="#">자세히 보기</a></p>
+                    </div>
+                </div>
+                <div class="app_box app_box4">
+                    <a href="#"><img src="./image/app_snks.jpg" alt=""></a>
+                    <div class="app_box_txt">
+                        <h2>SNKRS 앱</h2>
+                        <p>최고의 스니커즈, 최신 발매 소식, 독점 비하인드 스토리.<br>
+                        새로운 스니커즈 문화를 선도할<br>
+                        SNKRS 커뮤니티로 초대 합니다.</p>
+                        <p><a href="#">자세히 보기</a></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer><!-- ok -->
+        <div class="f_left" id="f_left1">
+            <a href="#">새로운 소식</a>
+            <a href="#">멤버가입</a>
+            <a href="#">매장안내</a>
+            <a href="#">나이키 저널</a>
+        </div>
+        <div class="f_left"  id="f_left2">
+            <a href="#">도움말</a>
+            <a href="#" class="f_menu_sub">로그인 안내</a>
+            <a href="#" class="f_menu_sub">주문배송조회</a>
+            <a href="#" class="f_menu_sub">반품 정책</a>
+            <a href="#" class="f_menu_sub">결제 방법</a>
+            <a href="#" class="f_menu_sub">공지사항</a>
+            <a href="#" class="f_menu_sub">문의하기</a>
+        </div>
+        <div class="f_left"  id="f_left3">
+            <a href="#">ABOUT NIKE</a>
+            <a href="#" class="f_menu_sub">소식</a>
+            <a href="#" class="f_menu_sub">채용</a>
+            <a href="#" class="f_menu_sub">투자자</a>
+            <a href="#" class="f_menu_sub">지속가능성</a>
+        </div>
+        <div class="f_left"  id="f_left4">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">위치 기반 서비스 약관</a>
+            <a href="#">영상정보처리기기 운영방침</a>
+        </div>
+        <div class="f_left"  id="f_left5">
+            <p><em>나이키코리아</em></p>
+            <address>
+                주소 :  서울 강남구 테헤란로 152 강남파이낸스센터 30층 <br>
+                (유)나이키코리아 대표 : Kimberlee Lynn Chang Mendes, 킴벌리 린 창 멘데스 <br>
+                통신판매신고번호 : 통신판매업신고번호 2011-서울강남-03461 <br>
+                사업자등록번호 : 등록번호 220-88-09068 <a href="#">사업자 정보 확인</a><br>
+                호스팅 서비스 사업자 : (유)나이키코리아
+            </address>
+            <p><em>고객센터</em></p>
+            <div id="f_info">
+                <p>전화 문의 : 080-022-0182</p>
+                <p>FAX : 02-6744-5880</p>
+                <p>이메일 : service@nike.co.kr</p>
+            </div>
+        </div>
+        <div id="f_right_logo">
+            <a href="#"><img src="./image/sns_twitter.png" alt="트위터"></a>
+            <a href="#"><img src="./image/sns_facebook.png" alt="페이스북"></a>
+            <a href="#"><img src="./image/sns_insta.png" alt="인스타그램"></a>
+            <a href="#"><img src="./image/sns_youtube.png" alt="유튜브"></a>
+        </div>
+    </footer>
     <script>
         // 마우스 올리는 메뉴 mainMenu
         const mainMenu = document.querySelectorAll('header .main_menu > .gnb')
+        const nGnb = document.querySelectorAll('header .main_menu .n_gnb')
+        console.log(nGnb)
         // mainMenu 올리면 나오는 메뉴 subMenu 
         const subMenu = document.querySelectorAll('header .sub_menu')
         // const subContents = document.querySelectorAll('header .sub_contents')
@@ -567,16 +666,22 @@
         //모든 서브 숨기기
         for(let i of subMenu){i.style.display = 'none'}
         for(let i of mainMenu){
-            i.addEventListener('click',function(){
+            i.addEventListener('mouseover',function(){
                 // console.log(i.lastElementChild)
+                for(let j of subMenu){j.style.display = 'none'}
                 i.lastElementChild.style.display = 'flex'
             })
             for(let j of subMenu){
                 j.addEventListener('mouseout',function(){
+                    for(let i of subMenu){i.style.display = 'none'}
                     j.style.display = 'none'
-                    
                 })
             }}
+            for(let i of nGnb){
+                i.addEventListener('mouseover',function(){
+                    for(let j of subMenu){j.style.display='none'}
+                })
+            }
             // swiper slide
             //배너 슬라이드     
         const mSlide = new Swiper("#marketing_slide",{
@@ -588,8 +693,11 @@
 /*             breakpoints:{
                 600:{slidesPerView:2, canteredSlides:false},
                 1000:{slidesPerView:3, centeredSlides:true},
-                
             } */
+            navigation : {
+                nextEl : '#marketing_slide .swiper-button-next', // 다음 버튼 클래스명
+                prevEl : '#marketing_slide .swiper-button-prev', // 이번 버튼 클래스명
+            },
         });
             // ******* featured Shoes item slide **********
             const featuredShoes = new Swiper('#featured_shoes_item',{
@@ -606,6 +714,10 @@
                     1160(데스크탑):{slidesPerView:4}
                 }
                 */
+                navigation : {
+                    nextEl : '#featured_shoes_item .swiper-button-next', // 다음 버튼 클래스명
+                    prevEl : '#featured_shoes_item .swiper-button-prev', // 이번 버튼 클래스명
+                },
             })
     </script>
 </body>

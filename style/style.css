@@ -1,143 +1,89 @@
-header {
-    margin: 0 auto; 
-    position: fixed; top: 0; left: 0;
-    width: 100%; height: 176px; white-space: nowrap; z-index: 10;
-}
-/* header 협업브랜드, 광고, user_info */
-header .top{
-    display: flex; justify-content: space-between;
-    background: #999; height: 50px; padding: 0 30px;
-}
-header .other_brands {padding-top: 10px;}
-header .other_brands a{width: 24px; height: 24px;}
-header .other_brands a img{}
-header .h_center {padding-top: 8px; text-align: center;}
-header .h_center p {}
-header .h_center p a {}
-header .h_right {padding-top: 15px;}
-header .h_right a {}
-header .bottom {
-    display: flex; justify-content: space-between;
-    padding: 25px 30px; background: #fff;
-}
-header .bottom a { align-items: center;}
-header .bottom a img {}
-header .bottom nav{}
-/* main menu */
-header .bottom nav .main_menu{
-    display: flex; flex-flow: row nowrap;
-}
-header .bottom nav .main_menu > li{
-    padding-right:30px;
-}
-header .bottom nav .main_menu > li > a{
-    line-height:30px; font-weight: 700; font-size: 1.333em;
-}
-header .bottom nav .main_menu > li > a:hover{
-    border-bottom: 2px solid black;
-}
-header .bottom nav .main_menu > li > .sub_menu{
-    display: flex; height: 600px; background: white;
-    position: absolute; margin-top: 30px; width: 100%;
-    left: 0; padding-left: 182px;
-}
-/* header .bottom nav .main_menu li .sub1 {display: flex;} */
-header .bottom nav .main_menu li > .sub_menu > li { 
-    border-right:1px solid #ddd ; text-align: center;
-    padding: 0 15px;
-    
-}
-header .bottom nav .main_menu li > .sub_menu > li {} 
-/* 서브메뉴 양쪽 선 */
-header .bottom nav .main_menu li > .sub_menu > li:first-child { border-right:none ;}
-header .bottom nav .main_menu li > .sub_menu > li:last-child { border-right:none ;}
-header .bottom nav .main_menu > li > .sub_menu > li > a {
-    padding-bottom: 20px; display: inline-block; font-size: 1.2em;
-    font-weight: 600;
-}
-header .bottom nav .main_menu > li > .sub_menu > li > .sub_contents{
-}
-header .bottom nav .main_menu > li > .sub_menu > li > .sub_contents > li {}
-header .bottom nav .main_menu > li > .sub_menu > li > .sub_contents> li > a {
-    color: gray;
-    padding: 10px 0; display: block; 
-}
-header .bottom nav .main_menu li .sub_menu li .sub_contents li a:hover {
-    color: black;
-}
-/* user icon & search */
-header .bottom .b_right {
-    display: flex;
-}
-header .bottom .b_right a{padding-right: 20px;}
-header .bottom .b_right {}
-header .bottom .b_right .search{
-    background: #ddd; border-radius:;
-}
-header .bottom .b_right .search fieldset{display: flex; justify-content: space-between;}
-header .bottom .b_right .search fieldset #searchtxt{
-    background: none; width: 200px; height: 40px; 
-    margin-left: 10px;
-}
-header .bottom .b_right .search fieldset #searchbtn{
-    background: none;
-    width: 24px; height: 24px; padding-top: 10px;
-}
-header .bottom .b_right .search fieldset #searchbtn img{
-    width: 100%;
-}
-header .bottom .b_right .search_btn{}
-header .bottom .b_right {}
 /* main */
-main {margin-top: 134px; background-color: yellowgreen; }
+main {}
 /* slide */
 main #marketing_slide{position: relative;
+    height: 100vh; padding-top: 130px;
 }
 main #marketing_slide .swiper-wrapper {}
+main #marketing_slide .swiper-button-prev::after,
+main #marketing_slide .swiper-button-next::after{
+    display: none;
+}
+#marketing_slide .swiper-scrollbar {
+    
+}
 main #marketing_slide .swiper-wrapper .swiper-slide {
-    width: 100%; position: relative; height:800px;
+    width: 100%; position: relative; height:800px; 
 }
 main #marketing_slide .swiper-wrapper .swiper-slide .slide_txt{
     position: absolute;
-    bottom: 5%;
+    bottom: 15px;
     left: 50%;
     transform: translate(-50%, -50%); text-align: center;
 }
 main #marketing_slide .swiper-wrapper .swiper-slide .slide_txt h1{
     line-height: 30px; font-weight: 600; font-size: 3.157em; color: #fff;
 }
-main #marketing_slide .swiper-wrapper .swiper-slide .slide_txt h1 span{}
+main #marketing_slide .swiper-wrapper .swiper-slide .slide_txt h1 span:nth-child(1){
+    line-height: 50px;
+}
 main #marketing_slide .swiper-wrapper .swiper-slide .slide_txt h1 a{
     background: black; border-radius: 20px; color: #fff; padding: 5px 20px;
 }
 main #marketing_slide .swiper-wrapper .slide1{
     background: url(../image/marketing_bn_slide1.jpg) no-repeat;
+    background-position: center;
 }
 main #marketing_slide .swiper-wrapper .slide2{
     background: url(../image/marketing_bn_slide2.jpg) no-repeat;
+    background-position: center;
 }
 main #marketing_slide .swiper-wrapper .slide3{
     background: url(../image/marketing_bn_slide3.jpg) no-repeat;
+    background-position: center;
 }
 main #marketing_slide .swiper-wrapper .slide4{
     background: url(../image/marketing_bn_slide4.jpg) no-repeat;
+    background-position: center;
 }
 main #marketing_slide .swiper-wrapper .slide5{
     background: url(../image/marketing_bn_slide5.jpg) no-repeat;
+    background-position: center;
 }
+main #marketing_slide .swiper-wrapper .slide5 .slide_txt{bottom: 0;}
+main #marketing_slide .swiper-wrapper .slide5 .slide_txt h1 a{
+    background-color: #fff; color: black;
+    }
 main #marketing_slide .swiper-wrapper .slide6{
     background: url(../image/marketing_bn_slide6.jpg) no-repeat;
+    background-position: center;
 }
+main #marketing_slide .swiper-wrapper .slide6 .slide_txt h1{color: black ;}
 main #marketing_slide .swiper-wrapper .slide7{
     background: url(../image/marketing_bn_slide7.jpg) no-repeat;
+    background-position: center;
 }
-main #marketing_slide .swiper-wrapper .slide8{}
 /* ******** Featured_shoes section ********* */
-main section {}
-main section h1 {
-    font-weight: 600; font-size: 1.777em;
+main section {
+    margin: 40px 0 0 30px;
 }
-main #featured_shoes_item {}
+main .featured_shoe_box .swiper-button-prev::after,
+main .featured_shoe_box .swiper-button-next::after{
+    display: none;
+}
+main .featured_shoe_box .swiper-button-prev{
+    background: url(../image/prev.png) no-repeat;
+    background-size: cover; width: 44px;
+}
+main .featured_shoe_box .swiper-button-next{
+    background: url(../image/Next.png) no-repeat;
+    background-size: cover; width: 44px;
+}
+main .featured_shoe_box h1 {
+    font-weight: 600; font-size: 1.777em; border-bottom: 3px solid black;
+    width: 300px; padding-bottom: 20px;
+}
+main #featured_shoes_item {padding-top: 30px;}
 main #featured_shoes_item {}
 main #featured_shoes_item .swiper-wrapper{}
 main #featured_shoes_item .swiper-wrapper .swiper-slide { 
@@ -145,6 +91,8 @@ main #featured_shoes_item .swiper-wrapper .swiper-slide {
 main #featured_shoes_item .swiper-wrapper .swiper-slide a{
     display: flex; flex-flow: column nowrap; 
 }
+main #featured_shoes_item .swiper-wrapper .swiper-slide a img:hover{
+    filter: brightness(110%) saturate(150%) ;}
 main #featured_shoes_item .swiper-wrapper .swiper-slide a > *{
     line-height: 25px;
 }
@@ -161,3 +109,35 @@ main #featured_shoes_item .swiper-wrapper .swiper-slide a .male{background: blac
 main #featured_shoes_item .swiper-wrapper .swiper-slide a .female{background: rgb(252, 0, 126);}
 main #featured_shoes_item .swiper-wrapper .swiper-slide a .unisex {background: rgb(216, 68, 0);}
 main #featured_shoes_item .swiper-wrapper .slide1{}
+/* Always Iconic line */
+/* app  */
+#app {
+    width: 100%; height: 80vh; 
+}
+#app h1 {
+    padding: 50px 0 30px 30px;
+    font-size: 1.777em; font-weight: 600;
+}
+#app .app_items {
+    margin-right: 60px;
+    display: flex; justify-content: space-between;}
+#app .app_items .app_box{}
+#app .app_items .app_box a{width: 330px; height: 370px;}
+#app .app_items .app_box a img{ width: 100%;}
+#app .app_items .app_box .app_box_txt{}
+#app .app_items .app_box .app_box_txt h2{
+    font-size: 1.777em; padding: 15px 0; font-weight: 600;
+}
+#app .app_items .app_box .app_box_txt p{
+    line-height: 30px;
+}
+#app .app_items .app_box .app_box_txt p a{
+    border-radius: 40px; background: black; color: #fff;
+    padding: 5px 10px; 
+    
+}
+#app .app_items .app_box .app_box_txt p a:last-child:hover{
+    background: #aaa; color: black; transform: skewX(30deg);
+    transition: all 0.5s linear;
+}
+#app .app_items .app_box .app_box_txt p:last-child{padding-top: 15px;}

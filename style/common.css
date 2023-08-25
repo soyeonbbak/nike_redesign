@@ -1,0 +1,122 @@
+header {
+    margin: 0 auto; 
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 176px; white-space: nowrap; z-index: 10;
+}
+/* header 협업브랜드, 광고, user_info */
+header .top{
+    display: flex; justify-content: space-between;
+    background: #dcdcdc; height: 50px; padding: 0 30px;
+}
+header .other_brands {padding-top: 10px;}
+header .other_brands a{width: 24px; height: 24px;}
+header .other_brands a img{}
+header .h_center {
+    display: flex; align-items: center;
+    text-align: center;
+}
+header .h_center p {padding-right: 20px;}
+header .h_center p a {}
+header .h_right {padding-top: 15px;}
+header .h_right a {font-weight: 500;}
+header .bottom {
+    display: flex; justify-content: space-between;
+    padding: 25px 30px 13px; background: #fff;
+}
+header .bottom a { align-items: center;}
+header .bottom a img {}
+header .bottom nav{}
+/* main menu */
+header .bottom nav .main_menu{
+    display: flex; flex-flow: row nowrap;
+}
+header .bottom nav .main_menu > li{
+    padding-right:30px;
+}
+header .bottom nav .main_menu > li > a{
+    line-height:30px; font-weight: 700; font-size: 1.333em;
+}
+header .bottom nav .main_menu > li > a:hover{
+    border-bottom: 2px solid black;
+}
+header .bottom nav .main_menu > li > .sub_menu{
+    display: flex; height: 600px; background: white;
+    position: absolute; margin-top: 25px; width: 100%;
+    left: 0; padding-left: 182px;
+}
+/* header .bottom nav .main_menu li .sub1 {display: flex;} */
+header .bottom nav .main_menu li > .sub_menu > li { 
+    border-right:1px solid #ddd ; text-align: center;
+    padding: 0 15px;
+    
+}
+header .bottom nav .main_menu li > .sub_menu > li {} 
+/* 서브메뉴 양쪽 선 */
+header .bottom nav .main_menu li > .sub_menu > li:first-child { border-right:none ;}
+header .bottom nav .main_menu li > .sub_menu > li:last-child { border-right:none ;}
+header .bottom nav .main_menu > li > .sub_menu > li > a {
+    padding-bottom: 20px; display: inline-block; font-size: 1.2em;
+    font-weight: 600;
+}
+header .bottom nav .main_menu > li > .sub_menu > li > .sub_contents{
+}
+header .bottom nav .main_menu > li > .sub_menu > li > .sub_contents > li {}
+header .bottom nav .main_menu > li > .sub_menu > li > .sub_contents> li > a {
+    color: gray;
+    padding: 10px 0; display: block; 
+}
+header .bottom nav .main_menu li .sub_menu li .sub_contents li a:hover {
+    color: black;
+}
+/* user icon & search */
+header .bottom .b_right {
+    display: flex;
+}
+header .bottom .b_right a{padding-right: 20px; margin-top: 7px;}
+header .bottom .b_right {}
+header .bottom .b_right .search{
+    background: #ddd; 
+}
+header .bottom .b_right .search fieldset{display: flex; justify-content: space-between;}
+header .bottom .b_right .search fieldset #searchtxt{
+    background: none; width: 200px; height: 40px; 
+    margin-left: 10px;
+}
+header .bottom .b_right .search fieldset #searchbtn{
+    background: none;
+    width: 24px; height: 24px; padding-top: 10px;
+}
+header .bottom .b_right .search fieldset #searchbtn img{
+    width: 100%;
+}
+header .bottom .b_right .search_btn{}
+header .bottom .b_right {}
+/* ******** footer ********* */
+footer {
+    display: flex; justify-content: space-between; 
+    background: #222; margin-top: 150px;
+    padding: 30px 30px 0;
+}
+footer div a, footer div{
+    color: #fff; line-height: 35px;
+}
+footer div a:hover, footer div:hover{
+    font-weight: 700; 
+}
+footer .f_left{
+    display: flex; flex-flow: column nowrap;
+}
+footer .f_left a{}
+footer .f_left .f_menu_sub{font-size: 0.8em;}
+footer #f_left1{}
+footer #f_left2{}
+footer #f_left3{}
+footer #f_left4{}
+footer #f_left4 p{}
+footer #f_left4 p em{}
+footer #f_left5 address{padding: 30px 0; line-height: 30px;}
+footer #f_left5 #f_info p{line-height: 30px;}
+footer #f_right_logo{}
+footer #f_right_logo a {width: 24px; height: 24px; padding-right: 15px;}
+footer #f_right_logo a:hover {filter: brightness(50%);}
+footer #f_right_logo a img{}

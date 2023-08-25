@@ -10,7 +10,7 @@
     font-family: '노토산스_기본'; /* 글꼴명 지정 */
     src:url(/font/NotoSansKR_Regular.ttf); /* 글꼴경로 지정 */
 }
-html, body
+html, body,
 h1,h2,h3,h4,h5,h6,p,blockquote,address,dl,dt,dd,ul,ol,li,
 span,strong,em,q,sub,sup,del,s,a,img,
 div,header,nav,aside,main,footer,article,figure,figcaption,section,video,

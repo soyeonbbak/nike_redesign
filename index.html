@@ -567,13 +567,16 @@
         //모든 서브 숨기기
         for(let i of subMenu){i.style.display = 'none'}
         for(let i of mainMenu){
-            i.addEventListener('mouseover',function(){
+            i.addEventListener('click',function(){
                 // console.log(i.lastElementChild)
                 i.lastElementChild.style.display = 'flex'
             })
-            i.addEventListener('mouseout',function(){
-                i.lastElementChild.style.display = 'none'
-            })}
+            for(let j of subMenu){
+                j.addEventListener('mouseout',function(){
+                    j.style.display = 'none'
+                    
+                })
+            }}
             // swiper slide
             //배너 슬라이드     
         const mSlide = new Swiper("#marketing_slide",{

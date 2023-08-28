@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+</head>
+<body>
 <footer><!-- ok -->
         <div class="f_left" id="f_left1">
             <a href="#">새로운 소식</a>
@@ -13,19 +24,21 @@
             <a href="#" class="f_menu_sub">결제 방법</a>
             <a href="#" class="f_menu_sub">공지사항</a>
             <a href="#" class="f_menu_sub">문의하기</a>
+        </div>
+        <div class="f_left"  id="f_left3">
             <a href="#">ABOUT NIKE</a>
             <a href="#" class="f_menu_sub">소식</a>
             <a href="#" class="f_menu_sub">채용</a>
             <a href="#" class="f_menu_sub">투자자</a>
             <a href="#" class="f_menu_sub">지속가능성</a>
         </div>
-        <div class="f_left"  id="f_left3">
+        <div class="f_left"  id="f_left4">
             <a href="#">이용약관</a>
             <a href="#">개인정보처리방침</a>
             <a href="#">위치 기반 서비스 약관</a>
             <a href="#">영상정보처리기기 운영방침</a>
         </div>
-        <div class="f_left"  id="f_left4">
+        <div class="f_left"  id="f_left5">
             <p><em>나이키코리아</em></p>
             <address>
                 주소 :  서울 강남구 테헤란로 152 강남파이낸스센터 30층 <br>
@@ -48,3 +61,5 @@
             <a href="#"><img src="./image/sns_youtube.png" alt="유튜브"></a>
         </div>
     </footer>
+</body>
+</html>

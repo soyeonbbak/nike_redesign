@@ -94,7 +94,7 @@ main #featured_shoes_item .swiper-wrapper .swiper-slide a{
 main #featured_shoes_item .swiper-wrapper .swiper-slide a img:hover{
     filter: brightness(110%) saturate(150%) ;}
 main #featured_shoes_item .swiper-wrapper .swiper-slide a > *{
-    line-height: 25px;
+    line-height: 35px;
 }
 main #featured_shoes_item .swiper-wrapper .swiper-slide a img{
     width: 330px; height: 330px;}

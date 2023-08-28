@@ -1,0 +1,50 @@
+main {
+    width: calc(100% - 60px); margin:0 auto;
+    
+}
+main .top_title{padding-top: 330px;}
+main .top_title p{color: #999;}
+main .top_title p > a{
+    color: #999;
+}
+main .top_title .men_bn{
+    text-align: center; margin: 0 auto;
+}
+main .top_title h1{text-align: center; font-size: 2.369em; font-weight: 600; margin: 30px 0 50px 0;}
+main .men_menu{text-align: center; margin:50px 0 130px 0;}
+main .men_menu a {
+    font-weight: 600; font-size: 1.777em; color: #aaa;
+    margin-right:30px;
+} 
+main .men_menu .active{color: black;}
+main .men_menu a:hover{color: black;}
+main > p{
+    font: 500;
+}
+main .item_list {
+    margin-top: 50px;
+    display: flex; justify-content: space-between;
+}
+main .item_list a {
+    display: flex; flex-flow: column nowrap;
+height: 500px;
+}
+main .item_list a > * {
+    line-height: 30px;
+}
+main .item_list a img{    width: 330px; }
+main .item_list a em{color: #c98200;}
+main .item_list a .item_name{font-weight: 600;}
+main .item_list a span{}
+main .item_list a .graycolor{color: #aaa;}
+main .item_list a span{}
+main .item_list a .male{
+    color: #fff; font-weight: 500;
+    background: rgb(252, 0, 126); width:25px; padding: 0 5px;
+    animation: gender 0.8s infinite;
+}
+@keyframes gender {
+    0%{color: #fff; background: rgb(252, 0, 126);}
+    50%{color: black; background: pink;}
+    100%{color: #fff; background: rgb(252, 0, 126);}
+}

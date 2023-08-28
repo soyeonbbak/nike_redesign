@@ -2,7 +2,7 @@ main {
     width: calc(100% - 60px); margin:0 auto;
     
 }
-main .top_title{padding-top: 330px;}
+main .top_title{padding-top: 230px;}
 main .top_title p{color: #999;}
 main .top_title p > a{
     color: #999;
@@ -24,27 +24,37 @@ main > p{
 main .item_list {
     margin-top: 50px;
     display: flex; justify-content: space-between;
+    flex-flow: row wrap;
 }
 main .item_list a {
     display: flex; flex-flow: column nowrap;
-height: 500px;
+    height: 500px; width: 25%;
 }
 main .item_list a > * {
-    line-height: 30px;
+    line-height: 35px;
 }
 main .item_list a img{    width: 330px; }
+main .item_list a img:hover{filter: brightness(50%);}
 main .item_list a em{color: #c98200;}
 main .item_list a .item_name{font-weight: 600;}
 main .item_list a span{}
 main .item_list a .graycolor{color: #aaa;}
 main .item_list a span{}
-main .item_list a .male{
-    color: #fff; font-weight: 500;
-    background: rgb(252, 0, 126); width:25px; padding: 0 5px;
-    animation: gender 0.8s infinite;
+main .item_list a .color_box{display: flex; padding: 10px 0;}
+main .item_list a .color_box > span{
+    display: block;
+    width: 24px; height: 24px; 
+    border-radius: 50%;
 }
-@keyframes gender {
-    0%{color: #fff; background: rgb(252, 0, 126);}
-    50%{color: black; background: pink;}
-    100%{color: #fff; background: rgb(252, 0, 126);}
+main .item_list a .color_box .color1{
+    border: 1px solid black; background: #fff;
+}
+main .item_list a .color_box .color2{
+    background: navy;
+}
+main .item_list a .color_box .color3{
+    background: black;
+}
+main .item_list a .color_box .color4{
+    background: red;
 }

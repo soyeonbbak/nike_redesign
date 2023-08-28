@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="나이키, 나이키신발, nike, 나잌">
-    <meta name="description" content="나이키 공식 홈페이지입니다.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike. Just Do it 나이키 코리아</title>
-    <!-- swiper slide -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- style sheet -->
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/common.css">
-</head>
+
 <body>
     <header>
         <div class="top">
@@ -32,7 +18,7 @@
             </div>
         </div>
         <div class="bottom">
-            <h1><a href="#"><img src="./image/nike_logo.png" alt="nike"></a></h1>
+            <h1><a href="./index.html"><img src="./image/nike_logo.png" alt="nike"></a></h1>
             <nav>
                 <ul class="main_menu">
                     <li class="gnb"><a href="#">New Releases</a>

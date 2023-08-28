@@ -1,0 +1,52 @@
+main {padding-top: 150px;}
+main .way {margin-left: 30px;}
+main .way p a, main .way p {font-weight: 500; color: #ccc;}
+main .way p span{font-weight: 500; color: black;}
+main .detail_item {
+    width: calc(100% - 794px); margin: 0 auto;
+    display: flex; justify-content: space-between;
+    margin-top: 50px;
+}
+main .detail_item .detail_img {}
+main .detail_item .detail_img > img {width: 449px; height: 490px;}
+main .detail_item .detail_img .detail_btm {margin-top: 20px; display: flex; justify-content: space-between;}
+main .detail_item .detail_img .detail_btm a {width: 97px; height: 97px;}
+main .detail_item .detail_img .detail_btm a img {width: 97px;}
+main .detail_item .detail_right {}
+main .detail_item .detail_right .info {
+    border-bottom: 1px solid black; width: 563px;
+    padding-bottom: 30px; 
+}
+main .detail_item .detail_right .info > *{padding-bottom: 20px;}
+main .detail_item .detail_right .info p:last-child{padding-bottom: 0;}
+main .detail_item .detail_right .info .star{color: rgb(255, 217, 0);}
+main .detail_item .detail_right .info p span{
+    color: #C98200; font-weight: 500;
+}
+main .detail_item .detail_right .info h1{font-size: 1.777em; font-weight: 600;}
+main .detail_item .detail_right .info h2{font-size: 1.777em;}
+main .detail_item .shoe_color{}
+main .detail_item .shoe_color h3 {padding: 30px 0 20px; font-weight: 500; font-size: 1.333em;}
+main .detail_item .shoe_color .color{}
+main .detail_item .shoe_color .color a{}
+main .detail_item .shoe_color .color a img {border-radius:15px;}
+main .detail_item .shoe_color .color a img:hover {border: 1px solid black;}
+main .detail_item .shoe_size{padding-top: 50px;}
+main .detail_item .shoe_size .shoe_txt{display: flex; justify-content: space-between;}
+main .detail_item .shoe_size .shoe_txt h3{font-weight: 500; font-size: 1.333em;}
+main .detail_item .shoe_size .shoe_txt p {}
+main .detail_item .shoe_size .shoe_txt p a {}
+main .detail_item .shoe_size .size_array {width: 500px;}
+main .detail_item .shoe_size .size_array .size_btn{
+    width: 75px; height: 45px; background: #fff; border: 1px solid #ccc;
+    margin: 15px 15px 0 0 ;
+}
+main .detail_item .shoe_size .size_array .size_btn:hover{border: 2px solid black;}
+main .detail_item .buy {
+    display: flex; justify-content: space-between;
+    margin: 100px 0 50px 0;}
+main .detail_item .buy a {
+    display: inline-block; text-align: center; padding-top: 15px;
+    width: 270px; height: 50px; background: #ddd;}
+main .detail_item .buy .cart{color: #fff; background-color: black;}
+main .detail_item .buy .right_buy{}
